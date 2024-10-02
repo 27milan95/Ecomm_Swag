@@ -38,7 +38,7 @@ public class LoginTest extends BaseClass {
 	public void verifyCorrectLoginCredentials() {
 		loginpage.login("standard_user", "secret_sauce");
 		String ActualTitle = commonmethod.getElementByClass("title").getText();
-		//Assert.assertEquals(ActualTitle, "Products");
+		Assert.assertEquals(ActualTitle, "Products");
 	}
 	
 //	public void verifyInCorrectLoginCredentials() {
